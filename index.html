@@ -5,49 +5,90 @@
   <title>Renato Rengifo | Academic Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Minimal styling -->
+  <!-- MathJax for equations -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Helvetica Neue", Arial, sans-serif;
       margin: 0;
-      background: #f5f5f5;
-      color: #222;
+      background: #f9fafb;
+      color: #1a1a1a;
+      line-height: 1.6;
     }
 
     header {
-      background: #111;
+      background: #0f172a;
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #cbd5f5;
+    }
+
     nav {
-      background: #222;
-      padding: 10px;
+      background: #1e293b;
+      padding: 12px;
       text-align: center;
     }
 
     nav a {
-      color: white;
+      color: #e2e8f0;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
     }
 
     section {
       max-width: 900px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 30px;
       background: white;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
-    h1, h2 {
-      margin-top: 0;
+    h2 {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #0f172a;
     }
 
-    .highlight {
-      color: #007acc;
+    h3 {
+      margin-top: 25px;
+      color: #1e293b;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin: 5px 5px 0 0;
+      font-size: 13px;
     }
   </style>
 </head>
@@ -56,7 +97,7 @@
 
 <header>
   <h1>Renato Rengifo</h1>
-  <p>Control Theory | Mathematical Modeling | Research</p>
+  <p>Biological Control Systems | Nonlinear Dynamics | Mathematical Modeling</p>
 </header>
 
 <nav>
@@ -67,50 +108,90 @@
 
 <section id="about">
   <h2>About Me</h2>
+
   <p>
-    I am focused on control systems and mathematical modeling, with a strong interest in biological systems
-    and research-oriented problem solving. My work combines theoretical analysis with practical implementation.
+    I am an applied mathematician and computational researcher specializing in nonlinear dynamical systems,
+    control theory, and biomolecular network modeling. My work focuses on understanding and designing biological
+    systems through mechanistic modeling and dynamical analysis.
   </p>
 
-  <h3>CV</h3>
-  <p>(Soon: downloadable CV)</p>
+  <p>
+    I am particularly interested in the control of gene regulatory networks, emergent behaviors such as oscillations
+    and pulse generation, and the integration of control theory with synthetic biology.
+  </p>
 
-  <h3>Key Achievements</h3>
+  <h3>Research Interests</h3>
+  <div>
+    <span class="tag">Biomolecular Control</span>
+    <span class="tag">Gene Regulatory Networks</span>
+    <span class="tag">Nonlinear Systems</span>
+    <span class="tag">Oscillations & Stability</span>
+    <span class="tag">Synthetic Biology</span>
+    <span class="tag">Resource Competition</span>
+  </div>
+
+  <h3>Selected Achievements</h3>
   <ul>
-    <li>Research in control and modeling</li>
-    <li>Short courses in advanced topics</li>
-    <li>Technical projects and implementations</li>
+    <li>First place – CONEIMERA 2025 (Research Category)</li>
+    <li>Winner – Engineering Biological Circuits Program (Latin America)</li>
+    <li>Published review article in dynamical systems (2025)</li>
+    <li>Research Advisor – IEEE SPS UNMSM</li>
   </ul>
 </section>
 
 <section id="projects">
   <h2>Reviewed Projects</h2>
+
   <p>
-    This section contains detailed reviews of scientific papers, including mathematical models,
-    simulations, and critical analysis.
+    This section contains technical reviews of scientific papers, including reconstruction of mathematical models,
+    simulation results, and critical analysis.
   </p>
 
   <ul>
-    <li>Project 1 (coming soon)</li>
-    <li>Project 2 (coming soon)</li>
+    <li>Gene regulatory network modeling (coming soon)</li>
+    <li>Oscillatory circuits analysis (coming soon)</li>
   </ul>
+
+  <h3>Example Equation</h3>
+  <p>
+    $$ \dot{x} = Ax + Bu $$
+  </p>
 </section>
 
 <section id="research">
-  <h2>Research & Experience</h2>
+  <h2>Research & Academic Background</h2>
+
+  <h3>Education</h3>
+  <ul>
+    <li><strong>MSc in Computer Science</strong> – National University of Trujillo (2024–2026)</li>
+    <li><strong>BSc in Electronic Engineering</strong> – Antenor Orrego Private University (2018–2023)</li>
+  </ul>
 
   <h3>Research Experience</h3>
-  <p>Details about your research experience.</p>
 
-  <h3>Short Courses</h3>
-  <p>Oxford short-course (control of biological systems).</p>
-
-  <h3>Skills</h3>
+  <p><strong>Programming Biomolecular Systems Lab (Remote)</strong></p>
   <ul>
-    <li>Mathematical Modeling</li>
-    <li>Control Systems</li>
-    <li>Data Analysis</li>
+    <li>Modeled gene regulatory networks with enzymatic reactions</li>
+    <li>Analyzed oscillatory regimes and stability properties</li>
+    <li>Studied pulse-generation mechanisms in 1-IFFL circuits</li>
+    <li>Incorporated resource competition constraints</li>
   </ul>
+
+  <p><strong>IEEE SPS – UNMSM</strong></p>
+  <ul>
+    <li>Developed EEG-based stress detection pipelines</li>
+    <li>Applied spectral and time–frequency analysis</li>
+    <li>Taught wavelet-based signal processing</li>
+  </ul>
+
+  <h3>Technical Skills</h3>
+  <ul>
+    <li>Nonlinear dynamical systems modeling</li>
+    <li>Control theory and stability analysis</li>
+    <li>MATLAB / Simulink</li>
+    <li>Python (scientific computing)</li>
+  </ul>
+
 </section>
 
 </body>
